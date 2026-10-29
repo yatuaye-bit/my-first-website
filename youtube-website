@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube clone</title>
+    <style>
+        .view-preview-photo{
+            width: 100%;
+            height: 150px;
+        }
+        p{
+            font-family: arial;
+            margin: 0;
+        }
+        .video-caption{
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .video-name, .video-viewer{
+            color: rgb(98, 98, 98);
+            font-size: 13px;
+        }
+        .video-name{
+            margin-bottom: 5px;
+        }
+        .profile-photo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin-top: 12px;
+            margin-right: 10px;
+        }
+       
+        .profile-photo-and-capation{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            column-gap: 10px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 40px;
+        }
+        .header{
+            display: flex;
+            height: 60px;
+            display: grid;
+            grid-template-columns: 200px 1fr 250px;
+            position: fixed;
+            background-color: white;
+        }
+        .menu-logo{
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .search-input-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-icon{
+            width: 250px;
+        }
+        .humburger-menu{
+            height: 28px;
+            margin-left: 10px;
+        }
+        .youtube-logo{
+            height: 20px;
+            margin-right: 40px;
+        }
+        .search-menu-btn{
+            height: 36px;
+            width: 50px;
+            margin-left: -2px;
+            border-color: rgb(206, 206, 206);
+            border: solid;
+            border-width: 0.3px;
+        }
+        .search-menu{
+            height: 20px;
+        }
+        .search-box{
+            height: 33px;
+            display: flex;
+            flex: 1;
+            padding-left: 15px;
+            border-color: rgb(206, 206, 206);
+            border: solid;
+            border-width: 0.3px;
+            /* width: 0; */
+        }
+        .voice-search-menu-btn{
+            height: 36px; 
+            margin-left: 30px;
+            border: none;
+            border-radius: 18px;
+            background-color: rgb(240, 239, 239);
+        }
+        .voice-search-menu{
+            height: 20px;
+        }
+        .header-icon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+            
+        }
+        .upload-menu, .youtube-apps-menu, .notification-menu{
+            height: 30px;
+        }
+        .profile-photo-menu{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+        .upload-menu{
+            margin-left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-logo">
+            <div class="menu-logo-humburger-menu">
+                <img class="humburger-menu" src="../photo/MaMa/hamburger-menu.svg" alt="hambuger-menu">
+            </div>
+            <div class="menu-logo-youtube-logo">
+                <img class="youtube-logo" src="../photo/MaMa/youtube-logo.svg" alt="youtube-app"> 
+            </div>
+        </div>
+        <div class="search-input-btn">
+            <div class="search-input-box">
+                <input class="search-box" type="text" placeholder="Search">
+            </div>
+            <button class="search-menu-btn">
+                <img class="search-menu" src="../photo/MaMa/search.svg" alt="search-menu">
+            </button>
+            <button class="voice-search-menu-btn">
+                <img class="voice-search-menu" src="../photo/MaMa/voice-search-icon.svg" alt="voice-search-menu">
+            </button>
+        </div>
+        <div class="header-icon">
+            <div class="upload-menu-icon">
+                <img class="upload-menu" src="../photo/MaMa/upload.svg" alt="upload-menu">
+            </div>
+            <div class="youtube-apps-menu-icon">
+                <img class="youtube-apps-menu" src="../photo/MaMa/youtube-apps.svg" alt="youtube-apps-menu">
+            </div>
+            <div class="notification-menu-icon">
+                <img class="notification-menu" src="../photo/MaMa/notifications.svg" alt="notifications-menu">
+            </div>
+            <div class="profile-photo-menu-icon">
+                <img class="profile-photo-menu" src="../photo/MaMa/2026-07-15 19.34.00.jpg" alt="profile-photo">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart1">
+            <img class="view-preview-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="video-preview">
+            <div class="profile-photo-and-capation">
+                <img class="profile-photo" src="../photo/MaMa/1aac0f869ac9d7e48931b0640af47ecb.jpg" alt="">
+                <div class="video-info">
+                    <p class="video-caption">Talking Tach and AI with Googl CEO Sundar Pichai!</p>
+                    <p class="video-name">Marques Brownlee</p>
+                    <p class="video-viewer">3.4M views &#183; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
